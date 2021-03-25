@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="login">
+		<div class="title">
+		<h2 id="connexion">Connexion</h2> 
+		</div>  
+		<div class="identifiant">
+			<label class="mylabel">Identifiant</label>
+			<input class="myinput" type="text" [(ngModel)] = "identifiant" />
+		</div>
+		<div class="pass">
+			<label class="mylabel">Mot de Passe</label>
+			<input class="myinput" type="password" [(ngModel)] = "mdp" />
+		</div>
+		<div class="boutton">
+			<button class="myinput btnlogin" (click)="login()">Se Connecter</button>
+		</div>
+	</div>
+	<div class="myAlert" *ngIf="message != null">{{message}}</div>
+</div>

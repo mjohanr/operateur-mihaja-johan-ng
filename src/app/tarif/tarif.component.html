@@ -1,0 +1,21 @@
+<div class="tarif-content" *ngIf="tarifs">
+    <div class="myAlert" *ngIf="message != null">{{message}}</div>
+    <div class="Appel">
+        <div class="produit">Appel</div>
+        <div class="appel-card card">
+            <app-card-tarif *ngFor="let tarif of tarifs_appel" [tarif]="tarif"></app-card-tarif>
+        </div>
+    </div>
+    <div class="Message">
+        <div class="produit">Message</div>
+        <div class="message-card card">
+            <app-card-tarif *ngFor="let tarif of tarifs_message" [tarif]="tarif"></app-card-tarif>
+        </div>
+    </div>
+    <div class="Internet">
+        <div class="produit">Internet</div>
+        <div class="internet-card card">
+            <app-card-tarif *ngFor="let tarif of tarifs_internet" [tarif]="tarif"></app-card-tarif>
+        </div>
+    </div>
+</div>

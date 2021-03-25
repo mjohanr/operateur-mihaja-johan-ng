@@ -1,0 +1,18 @@
+<!-- <p>ajout-forfait works!</p> -->
+<p><b>{{type}} </b></p>
+<p *ngIf = "type == 'Internet'">Valeur : <input [(ngModel)] = "forfait.valeur" >
+  Unite : <select [(ngModel)] = "forfait.unite" >
+    <option>Mo</option>
+    <option>Go</option>
+  </select> </p>
+<p *ngIf = "type == 'Appel'">Type :
+  <select [(ngModel)] = "typeAppel" >
+    <option value="0">Duree en minutes</option>
+    <option value="1">Prix par seconde</option>
+  </select></p>
+<div *ngIf = "type != 'Internet'">
+  <p>Telma: <input [(ngModel)] = "forfait.utilisation.operateur" > </p>
+  <p>Autres operateurs: <input [(ngModel)] = "forfait.utilisation.autres" > </p>
+  <p>International: <input [(ngModel)] = "forfait.utilisation.international" > </p>
+</div>
+<button (click) = "add()" >Ajouter</button>

@@ -1,0 +1,29 @@
+#titre-validation {
+	color: #232d38;
+}
+
+.tarif-content {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.produit {
+   /* font-size: 1.3rem; */
+   font-weight: bold;
+   border-bottom: 5px solid;
+   display: inline-flex;
+   flex-direction: row;
+   padding: 2px 20px;
+   /* border-radius: 5px; */
+   background-color: #;
+   color: #78339c;
+   width: 4rem;
+}
+
+.card {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

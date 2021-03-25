@@ -1,0 +1,21 @@
+<p>creation-offre works!</p>
+<p>Offre : <input [(ngModel)] = "offre.nom" ></p>
+<p>Prix (Ar TTC) : <input [(ngModel)] = "offre.tarif" type="number" min="100" > </p>
+<p>Validite (jours) : <input [(ngModel)] = "offre.validite" type="number" min="1" > </p>
+<p>Forfaits : </p>
+<div *ngFor = "let forfait of offre.forfaits" >
+  &nbsp;&nbsp;&nbsp;<b><i>{{forfait.produit}} </i></b><br>
+  <div *ngIf ="forfait.valeur != null" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>{{forfait.valeur}} </i><i> {{forfait.unite}} </i><br></div>
+  <div *ngIf= "forfait.utilisation != null " >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Telma: </i>{{forfait.utilisation.operateur}}<i> {{forfait.unite}} </i><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Autres operateurs: </i>{{forfait.utilisation.autres}}<i> {{forfait.unite}} </i><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>International: </i>{{forfait.utilisation.international}}<i> {{forfait.unite}} </i><br>
+    <div *ngIf ="forfait.utilisation.unite != null" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>par {{forfait.utilisation.unite}} </small></div>
+    <br>
+  </div>
+</div>
+<br><br>
+<app-ajout-forfait *ngIf = "service.isIn(appel, offre.forfaits) == false" [offre] = "offre" [type] = "appel" ></app-ajout-forfait>
+<app-ajout-forfait *ngIf = "!service.isIn(message, offre.forfaits)" [offre] = "offre" [type] = "message" ></app-ajout-forfait>
+<app-ajout-forfait *ngIf = "!service.isIn(internet, offre.forfaits)" [offre] = "offre" [type] = "internet" ></app-ajout-forfait>
+<br><br><button (click) = "create()" >Creer</button>

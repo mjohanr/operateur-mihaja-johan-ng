@@ -1,0 +1,69 @@
+.container {
+	padding: .5rem;
+    border-radius: .3rem;
+    border: 1px solid #7b389e99;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    color: #7a858f;
+    margin: .2rem .4rem;
+}
+
+.depot-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date {
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.numero {	
+	font-weight: bold;
+}
+
+.cin {
+        text-decoration: underline;
+    color: #7b389e;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+.client {
+        font-weight: 500;
+    color: #8a3aaf;
+    text-transform: uppercase;
+}
+
+
+.valeur {
+	    color: #7b389e;
+    font-weight: 500;
+    font-size: .9rem;
+    background-color: #e7e7e759;
+    border-radius: .2rem;
+    padding: .3rem;
+}
+
+.client-info {
+	    border: 1px dotted lightgray;
+    border-radius: 3px;
+    padding: 10px;
+     background-color: lightyellow; 
+    /* border-style: dashed; */
+    margin: 10px 0;
+}
+
+.btnvalider {
+	    background-color: #00bb20;
+    font-weight: bold;
+}
+
+.valider {
+	display: flex;
+	flex-direction: row-reverse;
+}

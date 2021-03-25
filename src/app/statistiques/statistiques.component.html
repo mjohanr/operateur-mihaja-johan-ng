@@ -1,0 +1,14 @@
+<!-- <p>statistiques works!</p> -->
+<h1>{{this.stat.titre}} </h1>
+ <div style="display: block">
+  <canvas baseChart
+      [chartType]="chartType"
+      [datasets]="this.stat.y"
+      [labels]="this.stat.x"
+      [colors]="chartColors"
+      [options]="chartOptions"
+      [legend]="true"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+  </canvas>
+</div>

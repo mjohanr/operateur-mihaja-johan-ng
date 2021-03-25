@@ -1,0 +1,36 @@
+<div class="myAlert" *ngIf="message != null">{{message}}</div>
+<div id="container">
+
+<div id="card-modification">
+    <div id="titre">
+        Modification tarif
+    </div>
+    <div id="produit" class="row-input">
+        <label class="label-tarif">
+            Produit
+        </label>
+        <span class="span-tarif">
+            {{tarif.produit}}
+        </span>
+    </div>
+    <div id="operateur" class="row-input">
+        <label class="label-tarif">
+            Operateur
+        </label>
+        <span class="span-tarif">
+            {{tarif.operateur}}
+        </span>
+    </div>
+    <div id="prix" class="row-input">
+        <label class="label-tarif">
+            Prix
+        </label>
+        <span class="span-tarif">
+            <input id="prix-input" [(ngModel)] = "tarif.prix"  type="number">
+        </span>
+    </div>
+    <div id="button-modifier-tarif">
+        <button id="modifier" (click) = "update()" >Valider</button>
+    </div>
+</div>
+</div>

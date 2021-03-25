@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="tarifs-info">
+        <div class="produit">
+            <span>{{tarif.produit}} vers {{tarif.operateur}}</span>
+        </div>
+        <div class="valeur">
+            <span>{{tarif.prix}} Ar</span>
+        </div>
+    </div>
+    <div class="valider">
+        <button class="btn btnmodifier" [routerLink] = "['modifier'] " [queryParams] = '{id : tarif.id}'>Modifier</button>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.mylabel {
+	    color: gray;
+    font-weight: 500;
+}
+
+.myinput {
+	    height: 1.7rem;
+    width: 100%;
+    margin: .2rem;
+    text-align: center;
+    color: #7b389e;
+    font-weight: 500;
+    border: 1px solid #cbcbcb;
+    border-radius: .2rem;
+}
+
+.myAlert {
+	padding: .5rem;
+	border: 1px solid white;
+	border-radius: 3px;
+	background-color: #505f72;
+	color: white;
+	font-size: .7rem;
+	justify-content: center;
+	display: flex;
+
+}
+
+.myAlert-danger {
+	color: red;
+	border-color: red;
+}
+
+.myTable {
+	width: 100%;
+	border: 1px solid gray;
+	background: #f1f1f1;
+}
+
+.myTable td, .myTable th {
+	padding: .5rem;
+}
+
+.myTable th {
+	font-weight: bold;
+}
+
+.myTable tr {
+	border: 1px solid gray;
+}
+
+.btn {
+	border: 1px solid white;
+	padding: .5rem;
+	border-radius: 4px;
+	color: white;
+}
+
+.btn-supprimer {
+	color: white;
+    background-color: #ff002fa3;
+    font-size: .7rem;
+    height: .;
+    height: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-supprimer:hover {
+	background-color: #ff002f;
+}
+
+.btn-update {
+	background-color: #767676;
+    font-size: .7rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-update:hover {
+	background-color: #4b4b4b;
+}
+
+body {
+	font-family: system-ui, -webkit-pictograph;
+	background-color: #edf1f4;
+}

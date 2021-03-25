@@ -1,0 +1,11 @@
+<p>modification-offre works!</p>
+<b><i>{{message}} </i></b><br>
+<b>Offre :</b> {{offre.nom}} <br>
+  <b>Prix (Ar TTC) : </b> <input [(ngModel)] = "offre.tarif" type="number" min="1"><br>
+  <b>Validite (jours) : </b> <input [(ngModel)] = "offre.validite" type="number" min="1"><br>
+  <b>Forfaits : </b> <br>
+  <div *ngFor = "let forfait of offre.forfaits" >
+      <app-modification-forfait [forfait]="forfait" ></app-modification-forfait>
+  </div>
+<button (click) = "update()" >Modifier</button>
+<a [routerLink] = "['../']" >Annuler</a>

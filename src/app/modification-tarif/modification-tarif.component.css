@@ -1,0 +1,60 @@
+#card-modification {
+	 background-color: white;
+    padding: 1rem;
+    border: .1rem solid #7b389ea1;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.row-input {
+	    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    border: 1px double #e0e0e0;
+    margin-bottom: .2rem;
+    border-radius: .2rem;
+}
+
+#container {
+	    display: flex;
+    justify-content: center;
+}
+
+.label-tarif {
+	color: gray;
+}
+.span-tarif {
+	color: #7b389e;
+	font-weight: 500;
+}
+
+#titre  {
+	    font-size: 1.5rem;
+    text-decoration: overline;
+    color: #7b389e;
+}
+
+#prix-input {
+	height: 100%;
+    border: 2px solid #ff4a6e;
+    border-radius: .2rem;
+    text-align: right;
+    color: gray;
+    font-weight: bold;
+}
+
+#button-modifier-tarif {
+	    display: flex;
+    flex-direction: row-reverse;
+}
+
+#modifier {
+	    color: white;
+    padding: .5rem;
+    background-color: gray;
+    border: 1px solid white;
+    border-radius: .2rem;
+}

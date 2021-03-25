@@ -1,0 +1,65 @@
+.container {
+	    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 250px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    color: #7a858f;
+    flex-basis: 450px;
+    margin: .5rem;
+}
+
+.tarifs-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date {
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.numero {	
+	font-weight: bold;
+}
+
+.valeur {
+        color: white;
+    font-weight: 500;
+    font-size: .8rem;
+    background-color: #30db4d;
+    border-radius: 5px;
+    padding: .2rem;
+}
+
+.client-info {
+	    border: 1px dotted lightgray;
+    border-radius: 3px;
+    padding: 10px;
+    /* background-color: #fff7f7; */
+    /* border-style: dashed; */
+    margin: 10px 0;
+}
+
+.btnmodifier {
+	    background-color: #8897a4;
+    font-size: .7rem;
+}
+
+.valider {
+	display: flex;
+    flex-direction: row;
+}
+
+.produit {
+    font-size: .7rem;
+        border: 1px solid lightgrey;
+    padding: 5px;
+    background-color: lightyellow;
+    border-radius: 3px;
+}

@@ -1,0 +1,56 @@
+.container {
+	    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+	    padding: 1rem 2rem;
+    display: flex;
+    border-radius: .2rem;
+    border: 1px solid #c6c6c6;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+}
+
+.identifiant, .pass, .boutton {
+	    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boutton {
+	justify-content: flex-end;
+}
+
+.btnlogin {
+    background-color: #8813c5;
+    border: 1px solid #ffffff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnlogin:hover {
+   color: #8813c5;
+   background-color: white;
+   border: 1px solid #8813c5;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#connexion {
+        text-decoration: overline;
+    color: #7b389e;
+}

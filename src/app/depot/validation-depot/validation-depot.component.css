@@ -1,0 +1,25 @@
+.liste-validation-depot {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-grow: 1;
+   	justify-content: flex-start;
+
+}
+
+#titre-validation {
+	    color: #7b389e;
+    text-decoration: overline;
+    margin: .5rem;
+}
+
+#dnv {
+	color: #7a858f;
+}
+
+.card-depot {
+	flex-grow: 1;
+    flex-basis: 500px;
+    max-width: 500px;
+    flex-shrink: 1;
+}

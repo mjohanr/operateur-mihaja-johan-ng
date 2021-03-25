@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="depot-info">
+        <div class="date">
+            <span>{{depot.dateMobileMoney}}</span>
+        </div>
+        <div class="valeur">
+            <span>+ {{depot.valeur}} Ar</span>
+        </div>
+    </div>
+    <div class="client-info">
+        <div class="client">
+            <span>{{depot.nom}}</span>
+        </div>
+        <div class="numero">
+            <span>{{depot.numero}}</span>
+        </div>
+        <div class="cin">
+            <span>CIN: {{depot.cin}}</span>
+        </div>
+    </div>
+    <div class="valider">
+        <button class="btn btnvalider" (click)="update(depot)">Valider</button>
+    </div>
+</div>

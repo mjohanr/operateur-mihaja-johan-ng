@@ -1,0 +1,61 @@
+<div class="myAlert" *ngIf="message != null">{{message}}</div>
+<div class="list-card-offre">
+  <div *ngFor = "let offre of offres" class="card-offre" >
+
+    <div class="info-offre">
+      <div class="offre-nom"> 
+        {{offre.nom}}
+      </div>
+      <div class="info-offre-droite">
+        <div class="offre-prix">
+          {{offre.tarif}} Ar ttc
+        </div>
+        <div class="offre-validite">
+          {{offre.validite}} j
+        </div>
+      </div>
+    </div>
+
+    <div class="forfait">
+      <div class="liste-forfait" *ngFor = "let forfait of offre.forfaits" >
+        <div class="forfait-produit">
+          {{forfait.produit}}
+        </div>
+        <div class="forfait-utilisation" >
+          <div id="valeur" *ngIf ="forfait.valeur != null" >
+            {{forfait.valeur}} {{forfait.unite}}
+          </div>
+          <div class="" *ngIf= "forfait.utilisation != null " >
+            <div class="op-telma" *ngIf="forfait.utilisation.operateur > 0">
+              <i class="label-italic">Meme:</i>
+              <span class="val">{{forfait.utilisation.operateur}}</span>
+              <i class="val"> {{forfait.unite}} </i>
+              <i class="val" *ngIf ="forfait.utilisation.unite != null">
+                /{{forfait.utilisation.unite}}</i>
+            </div>
+            <div class="op-autre" *ngIf="forfait.utilisation.autres > 0">
+              <i class="label-italic">Autres operateurs:</i>
+              <span class="val">{{forfait.utilisation.autres}}</span>
+              <i class="val"> {{forfait.unite}} </i>
+              <i class="val" *ngIf ="forfait.utilisation.unite != null">
+                /{{forfait.utilisation.unite}}</i>
+            </div>
+            <div class="op-international" *ngIf="forfait.utilisation.international > 0">
+              <i class="label-italic">International:</i>
+              <span class="val">{{forfait.utilisation.international}}</span>
+              <i class="val"> {{forfait.unite}} </i>
+              <i class="val" *ngIf ="forfait.utilisation.unite != null">
+                /{{forfait.utilisation.unite}}</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <a class="btn btn-update" [routerLink] = "['modifier'] " [queryParams] = '{id : offre.id}' >Modifier</a>
+      <button class="btn btn-supprimer" (click) = "deleteConfirmation(offre.id, offre.nom)" >Supprimer</button>
+    </div>
+
+  </div>
+</div>

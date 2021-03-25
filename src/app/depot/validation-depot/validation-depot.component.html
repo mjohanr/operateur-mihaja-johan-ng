@@ -1,0 +1,9 @@
+<h2 id="titre-validation">
+	Dépots non validés
+</h2>
+<div class="myAlert" *ngIf="message != null">{{message}}</div>
+<div class="liste-validation-depot">
+	<app-depot-non-valide class="card-depot" *ngFor="let depot of depotNonValide" 
+	[depot]="depot"
+	></app-depot-non-valide>
+</div>
